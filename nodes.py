@@ -127,7 +127,7 @@ class CfgLiteral:
 
 class CheckpointSelector:
     CATEGORY = 'ImageSaverTools/utils'
-    RETURN_TYPES = (folder_paths.get_filename_list("checkpoints"),)
+    RETURN_TYPES = ("STRING",)  # 修复：将检查点列表改为字符串类型
     RETURN_NAMES = ("ckpt_name",)
     FUNCTION = "get_names"
 
